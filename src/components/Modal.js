@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import { useRecoilState } from "recoil";
+import { nameState } from "../atoms";
 import { Modal, Button, Form } from "react-bootstrap";
 
 const styles = {
@@ -25,9 +26,15 @@ const styles = {
 
 const MyModal = () => {
   const [show, setShow] = useState(true);
-
+  console.log(nameState)
+  const [name, setName] = useRecoilState(nameState);
+  console.log(name)
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const onChange = ({ target: { value } }) => {
+    setName(value);
+  };
 
   return (
     <>
@@ -47,8 +54,16 @@ const MyModal = () => {
       </form> */}
           <Form style={styles.form} onSubmit={handleClose}>
             <Form.Group>
-              <Form.Label>What is your name?</Form.Label>
-              <Form.Control type="text" placeholder="Visitor" />
+              <Form.Label>Hello! What is your name?</Form.Label>
+              <Form.Control
+                value={name}
+                onChange={onChange}
+                type="text"
+                placeholder="Visitor"
+              />
+              <Button className="mt-3" type="submit">
+                Enter
+              </Button>
             </Form.Group>
           </Form>
         </Modal>

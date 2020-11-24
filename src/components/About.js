@@ -1,28 +1,32 @@
+import { useRecoilState } from "recoil";
+import { nameState } from "../atoms";
+
+const styles = {
+  wrapper: {
+    background: "#222",
+    color: "white",
+    height: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    alignItems: "center",
+    //   fontFamily: "News Gothic",
+    //   fontWeight: "bold",
+  },
+};
+
 const About = () => {
   //
-  const name = "";
+  const [name, setName] = useRecoilState(nameState);
 
-  const styles = {
-    wrapper: {
-      background: "#222",
-      color: "white",
-      height: "100vh",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "space-around",
-      alignItems: "center",
-      //   fontFamily: "News Gothic",
-      //   fontWeight: "bold",
-    },
-  };
   return (
     <>
       <div style={styles.wrapper}>
         <h1>Hi{name && `, ${name}`}!</h1>
+      </div>
+      <div style={styles.wrapper}>
         <h1>My name is Logan</h1>
       </div>
-      {/* <div style={styles.wrapper}>
-      </div> */}
       <div style={styles.wrapper}>
         <h2>
           <ul>
