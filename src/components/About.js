@@ -19,23 +19,23 @@ const About = () => {
     <>
       <div style={styles.wrapper}>
         <h1>Hi{name && `, ${name}`}!</h1>
-      </div>
-      <div style={styles.wrapper}>
         <h1>My name is Logan</h1>
       </div>
+      {/* <div style={styles.wrapper}>
+      </div> */}
       <div style={styles.wrapper}>
-        <ul>
-          <h2>
-            I am also:
+        <h2>
+          <ul>
+            I am
             <li>an educator</li>
             <li>a mentor</li>
             <li>a lifelong learner</li>
-          </h2>
-        </ul>
+          </ul>
+        </h2>
       </div>
-      <div style={styles.wrapper}>
+      {/* <div style={styles.wrapper}>
         <h1>Come take a look at my work:</h1>
-      </div>
+      </div> */}
     </>
   );
 };

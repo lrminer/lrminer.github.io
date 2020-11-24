@@ -17,9 +17,7 @@ function App() {
           </Col>
         </Row>
         <Row>
-          <Col>
-            <About />
-          </Col>
+          <Col><About /></Col>
         </Row>
         <Row>
           <Col>
@@ -27,9 +25,7 @@ function App() {
           </Col>
         </Row>
         <Row>
-          <Col>
-            <Gallery />
-          </Col>
+          <Col>{/* <Gallery /> */}</Col>
         </Row>
         <Row>
           <Col>

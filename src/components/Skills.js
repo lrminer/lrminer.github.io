@@ -52,6 +52,9 @@ const Skills = () => {
     { name: "Brain.js", type: "Frontend" },
     { name: "Handlebars", type: "Frontend" },
     { name: "Socket.io", type: "Frontend" },
+    { name: "Jest", type: "Frontend" },
+    { name: "Enzyme", type: "Frontend" },
+
 
 
 
@@ -77,11 +80,11 @@ const Skills = () => {
     <div style={styles.wrapper}>
       {/*       <h1>Skills</h1>
        */}{" "}
-      <h2>Experience with:</h2>
+      <h2>I have experience with:</h2>
       <div className="row">
         {skills.sort(sortByName).map((skill) => {
           return (
-            <div className="col-6 col-sm-4 col-md-2 col-lg-2 text-center">
+            <div className="col-6 col-sm-4 col-md-2 col-lg-2 text-center p-3">
               {skill.name}
             </div>
           );
