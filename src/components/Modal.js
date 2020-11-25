@@ -26,9 +26,9 @@ const styles = {
 
 const MyModal = () => {
   const [show, setShow] = useState(true);
-  console.log(nameState)
+  //   console.log(nameState)
   const [name, setName] = useRecoilState(nameState);
-  console.log(name)
+  //   console.log(name)
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
