@@ -77,7 +77,7 @@ const Skills = () => {
 
 
   return (
-    <div style={styles.wrapper}>
+    <div id="skills" style={styles.wrapper}>
       {/*       <h1>Skills</h1>
        */}{" "}
       <h2>I have experience with:</h2>

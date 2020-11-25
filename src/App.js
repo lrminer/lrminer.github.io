@@ -10,7 +10,7 @@ import { RecoilRoot } from "recoil";
 import { Link } from "react-scroll";
 
 function App() {
-  const possibleSections = ["greeting", "intro", "iama"];
+  const possibleSections = ["greeting", "intro", "iama", "skills", "contact"];
 
   const [index, setIndex] = useState(1);
 
@@ -36,28 +36,29 @@ function App() {
     <div className="App">
       <RecoilRoot>
         <Container fluid className="p-0">
-          <Link
-            activeClass="active"
-            style={{
-              position: "fixed",
-              left: 0,
-              bottom: 0,
-              width: "100%",
-              backgroundColor: "red",
-              color: "white",
-              textAlign: "center",
-            }}
-            to={targetElementState}
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={handleClick}
-          >
-            <button>Next</button>
-          </Link>
           <Row noGutters>
             <Col>
+              {/* <Link
+                activeClass="active"
+                style={{
+                  position: "fixed",
+                  left: 0,
+                  bottom: 0,
+                  width: "100%",
+                  zIndex: "1",
+                  backgroundColor: "red",
+                  color: "white",
+                  textAlign: "center",
+                }}
+                to={targetElementState}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleClick}
+              >
+                <button>Next</button>
+              </Link> */}
               {/* <Navbar/> */}
               <Modal />
             </Col>
