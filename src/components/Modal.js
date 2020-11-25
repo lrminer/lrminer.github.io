@@ -28,9 +28,7 @@ const MyModal = () => {
   console.log(nameState);
   const [name, setName] = useRecoilState(nameState);
   const [show, setShow] = useState(name ? false : true);
-  //   console.log(name)
   const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
 
   const onChange = ({ target: { value } }) => {
     setName(value);
