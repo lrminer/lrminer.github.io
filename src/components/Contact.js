@@ -5,7 +5,7 @@ const Contact = () => {
     wrapper: {
       background: "#222",
       color: "white",
-      height: "100vh",
+      height: "30vh",
     },
   };
   return (
