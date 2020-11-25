@@ -25,7 +25,7 @@ const styles = {
 };
 
 const MyModal = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(nameState ? false : true);
   //   console.log(nameState)
   const [name, setName] = useRecoilState(nameState);
   //   console.log(name)
@@ -33,6 +33,7 @@ const MyModal = () => {
   const handleShow = () => setShow(true);
 
   const onChange = ({ target: { value } }) => {
+    localStorage.setItem("name", value);
     setName(value);
   };
 
