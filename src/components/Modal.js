@@ -25,16 +25,26 @@ const styles = {
 };
 
 const MyModal = () => {
-  const [show, setShow] = useState(nameState ? false : true);
-  //   console.log(nameState)
+  console.log(nameState);
   const [name, setName] = useRecoilState(nameState);
+  const [show, setShow] = useState(name ? false : true);
   //   console.log(name)
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleShow = () => setShow(true);
 
   const onChange = ({ target: { value } }) => {
-    localStorage.setItem("name", value);
     setName(value);
+  };
+
+  const onSubmit = () => {
+    console.log(name);
+    if (name === "") {
+      localStorage.setItem("name", "Visitor");
+      setName('Visitor');
+    } else {
+      localStorage.setItem("name", name);
+    }
+    handleClose();
   };
 
   return (
@@ -53,7 +63,7 @@ const MyModal = () => {
           {/* <form action="" style={styles.wrapper}>
         <label htmlFor="">Hello World</label>
       </form> */}
-          <Form style={styles.form} onSubmit={handleClose}>
+          <Form style={styles.form} onSubmit={onSubmit}>
             <Form.Group>
               <Form.Label>Hello! What is your name?</Form.Label>
               <Form.Control
