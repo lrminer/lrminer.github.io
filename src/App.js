@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App">
       <RecoilRoot>
-        <Container fluid className="p-0">
+        <Container fluid className="">
           <Row noGutters>
             <Col>
               {/* <Link

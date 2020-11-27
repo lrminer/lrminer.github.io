@@ -70,7 +70,7 @@ const MyModal = () => {
                 type="text"
                 placeholder="Visitor"
               />
-              <Button className="mt-3" type="submit">
+              <Button className="" type="submit">
                 Enter
               </Button>
             </Form.Group>
