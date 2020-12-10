@@ -3,7 +3,7 @@ import Skills from "./Skills";
 
 const Main = () => {
     return (
-        <div className={"pt-5 pb-5"} style={{background: "wheat"}}>
+        <div className={"mt-5 pt-5 pb-5"} style={{background: "wheat"}}>
             <div className="container p-0">
                 <section className={"p-5"}
                          style={{border: 'black 1px solid', borderRadius: "10px", background: "white"}}>
