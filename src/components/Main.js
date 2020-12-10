@@ -6,7 +6,7 @@ import Projects from './Projects'
 import AdditionalInformation from "./AdditionalInformation";
 const Main = () => {
     return (
-        <div className={"mt-5 pt-5 pb-5"} style={{background: "whitesmoke"}}>
+        <div className={"pt-5 pb-5"} style={{background: "#555"}}>
             <div className="container p-0">
                 <Intro/>
                 <WorkExperience/>

@@ -4,7 +4,7 @@ const Intro = () => {
 
     return (
         <section className={"p-5"}
-                 style={{border: 'black 1px solid', borderRadius: "10px", background: "white"}}>
+                 style={{border: 'black 1px solid', borderRadius: "10px"}}>
 
             <div className="row">
                 <div className="col-12 col-md-6">

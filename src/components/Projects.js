@@ -25,7 +25,7 @@ const Projects = () => {
 
     return (
         <section className={"mt-5 p-5"}
-                 style={{border: 'black 1px solid', borderRadius: "10px", background: "white"}}>
+                 style={{border: 'black 1px solid', borderRadius: "10px"}}>
             <h1 style={{color: "#007ba7"}}>Projects</h1>
             <div className="row">
                 {projects.map(project => <Project {...project} />)}

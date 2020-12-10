@@ -122,7 +122,7 @@ const Skills = () => {
     return (
 
         <section className={"mt-5 p-5"}
-                 style={{border: 'black 1px solid', borderRadius: "10px", background: "white"}}>
+                 style={{border: 'black 1px solid', borderRadius: "10px"}}>
             <h1 style={{color: "#007ba7"}}>Experience working with:</h1>
             <div className={'container'} id="skills">
                 <div className="row">
