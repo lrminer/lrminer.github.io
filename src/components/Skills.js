@@ -126,7 +126,7 @@ const Skills = () => {
             <h1 style={{color: "#007ba7"}}>Experience working with:</h1>
             <div className={'container'} id="skills">
                 <div className="row">
-                    <div className={'col'}>
+                    <div className={'col-6'}>
                         <div className={"list-group list-group-flush"}>
                             {skills.sort(sortByName).map((skill, i) => {
                                 if (i % 2 === 0) {
@@ -145,7 +145,7 @@ const Skills = () => {
                             })}
                         </div>
                     </div>
-                    <div className={'col'}>
+                    <div className={'col-6'}>
                         <div className={"list-group list-group-flush"}>
                             {skills.sort(sortByName).map((skill, i) => {
                                 if (i % 2 === 0) {
