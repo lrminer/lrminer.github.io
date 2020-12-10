@@ -27,7 +27,7 @@ const Education = () => {
                 <tr>
                     <th scope={'row'}>Certificate</th>
                     <td>Full Stack Web Development</td>
-                    <td>09/2020</td>
+                    <td>09/2019</td>
                     <td>Georgia Institute of Technology</td>
                     {/*<td>React Developer</td>*/}
                 </tr>
