@@ -34,7 +34,7 @@ const Main = () => {
                         <tbody>
                         <tr>
                             <th scope={'row'}>Teaching Assistant</th>
-                            <td>09/2019</td>
+                            <td>10/2019</td>
                             <td>Current</td>
                             <td>2U</td>
                             {/*<td>React Developer</td>*/}
