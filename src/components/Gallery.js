@@ -1,10 +1,18 @@
 const Gallery = () => {
   //
 
-  const styles = {};
+  const styles = {
+      gallery: {
+          position: 'relative',
+
+
+      }
+  };
   return (
     <>
-      <h1>Gallery</h1>
+      <div style={styles.gallery}>
+
+      </div>
     </>
   );
 };
