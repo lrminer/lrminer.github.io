@@ -21,7 +21,7 @@ const Intro = () => {
                         catering to a variety of audiences.</p>
                 </div>
                 <div className="col-12 col-md-6">
-                    <img style={{height: 300, width: 300, border: "#007ba7 solid 2px", borderRadius: "50%"}}
+                    <img style={{maxHeight: 400, maxWidth: 400, height: "100%", width: "100%", border: "#007ba7 solid 10px", borderRadius: "50%"}}
                          src="./professional-image.jpg" alt="Professional image of Logan Miner"/>
                 </div>
             </div>
