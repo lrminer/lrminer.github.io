@@ -1,6 +1,3 @@
-import {Col, Row} from "react-bootstrap";
-import {useLayoutEffect} from "react";
-
 const Skills = () => {
     const skills = [
         {
@@ -123,49 +120,57 @@ const Skills = () => {
     }
 
     return (
-        <div className={'container'} id="skills">
-            <div className="row">
-                <div className={'col'}>
-                    <div className={"list-group list-group-flush"}>
-                        {skills.sort(sortByName).map((skill, i) => {
-                            if (i % 2 === 0) {
-                                return <>
-                                    <a className={"list-group-item list-group-item-action text-center"} style={{}}
-                                       href={skill.docs}>{skill.name}</a>
-                                    <div className="progress">
-                                        <div className={`progress-bar bg-info`} role="progressbar" style={{width: detProgWidth(skill.experience) }}
-                                             ariaValuenow="25" ariaValuemin="0" ariaValuemax="100"></div>
-                                    </div>
-                                </>
-                            } else {
-                                return;
-                            }
-                        })}
-                    </div>
-                </div>
-                <div className={'col'}>
-                    <div className={"list-group list-group-flush"}>
-                        {skills.sort(sortByName).map((skill, i) => {
-                            if (i % 2 === 0) {
-                                return
-                            } else {
-                                return <>
-                                    <a className={"list-group-item list-group-item-action text-center"} style={{}}
-                                       href={skill.docs}>
-                                        {skill.name}
-                                    </a>
-                                    <div className="progress">
-                                        <div className={`progress-bar bg-info`} role="progressbar" style={{width: detProgWidth(skill.experience) }}
-                                             ariaValuenow="25" ariaValuemin="0" ariaValuemax="100"></div>
-                                    </div>
-                                </>;
-                            }
-                        })}
-                    </div>
-                </div>
-            </div>
 
-        </div>
+        <section className={"mt-5 p-5"}
+                 style={{border: 'black 1px solid', borderRadius: "10px", background: "white"}}>
+            <h1 style={{color: "#007ba7"}}>Experience working with:</h1>
+            <div className={'container'} id="skills">
+                <div className="row">
+                    <div className={'col'}>
+                        <div className={"list-group list-group-flush"}>
+                            {skills.sort(sortByName).map((skill, i) => {
+                                if (i % 2 === 0) {
+                                    return <>
+                                        <a className={"list-group-item list-group-item-action text-center"} style={{}}
+                                           href={skill.docs}>{skill.name}</a>
+                                        <div className="progress">
+                                            <div className={`progress-bar bg-info`} role="progressbar"
+                                                 style={{width: detProgWidth(skill.experience)}}
+                                                 ariaValuenow="25" ariaValuemin="0" ariaValuemax="100"></div>
+                                        </div>
+                                    </>
+                                } else {
+                                    return;
+                                }
+                            })}
+                        </div>
+                    </div>
+                    <div className={'col'}>
+                        <div className={"list-group list-group-flush"}>
+                            {skills.sort(sortByName).map((skill, i) => {
+                                if (i % 2 === 0) {
+                                    return
+                                } else {
+                                    return <>
+                                        <a className={"list-group-item list-group-item-action text-center"} style={{}}
+                                           href={skill.docs}>
+                                            {skill.name}
+                                        </a>
+                                        <div className="progress">
+                                            <div className={`progress-bar bg-info`} role="progressbar"
+                                                 style={{width: detProgWidth(skill.experience)}}
+                                                 ariaValuenow="25" ariaValuemin="0" ariaValuemax="100"></div>
+                                        </div>
+                                    </>;
+                                }
+                            })}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     );
 };
 
