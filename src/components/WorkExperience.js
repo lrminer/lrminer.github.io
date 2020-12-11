@@ -13,7 +13,7 @@ const Job = ({title, startDate, endDate, company, description, achievements}) =>
 
     return (
         <>
-            <tr onClick={toggleOpen}>
+            <tr className={"pointer"} onClick={toggleOpen}>
                 <th scope={"row"}>{title}</th>
                 <td>{startDate}</td>
                 <td>{endDate}</td>
@@ -22,7 +22,7 @@ const Job = ({title, startDate, endDate, company, description, achievements}) =>
 
 
             <Modal
-                className={"mymodal"}
+                className={"myModal"}
                 overlayClassName={"overlay"} closeTimeoutMD={250}
                 onRequestClose={toggleOpen}
                 isOpen={open}>
@@ -32,9 +32,9 @@ const Job = ({title, startDate, endDate, company, description, achievements}) =>
                     <h1>{title}</h1>
                     <p>{company}</p>
                     <p>{description}</p>
-                    {achievements.length > 0 && <ul>
+                    {achievements.length > 0 && <ul className={"list-group list-group-flush"}>
                         {achievements.map((achievement, index) => (
-                            <li key={{index}}>
+                            <li className={"list-group-item"} key={{index}}>
                                 {achievement}
                             </li>
                         ))}
@@ -64,7 +64,7 @@ const WorkExperience = () => {
                 {workExperience.map((job, index) => <Job key={index} {...job} />)}
                 </tbody>
             </table>
-            <p>* click on a row to see more details.</p>
+            <p>*Click on a row to see more details</p>
         </section>
 
     );

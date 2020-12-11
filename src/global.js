@@ -6,7 +6,7 @@ export const GlobalStyles = createGlobalStyle`
   *::before {
     box-sizing: border-box;
   }
- body, section, table, .list-group-item, thead, tbody, .mymodal {
+ body, section, table, .list-group-item, thead, tbody, .myModal {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.25s linear;

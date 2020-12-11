@@ -7,11 +7,20 @@ a {
     color: #007ba7;
 }
 
-.mymodal {
+tr.pointer {
+    cursor: pointer;
+}
+
+.myModal {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 1140px;
+    height: 500px;
+    /*margin-top: -100px;*/
+    /*margin-left: -100px;*/
     border: 1px solid #ccc;
     background: white;
     overflow: auto;
