@@ -29,9 +29,10 @@ const Job = ({title, startDate, endDate, company, description, achievements}) =>
                 <div
                     // style={{color: "white"}}
                 >
-                    <h1>{title}</h1>
-                    <p>{company}</p>
-                    <p>{description}</p>
+                    <div className="card-body">
+                        <h5 className="card-title">{title}</h5>
+                        <p className="card-text">{company}</p>
+                    </div>
                     {achievements.length > 0 && <ul className={"list-group list-group-flush"}>
                         {achievements.map((achievement, index) => (
                             <li className={"list-group-item"} key={{index}}>
