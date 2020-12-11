@@ -28,8 +28,12 @@ const workExperience = [{
     startDate: "11/2019",
     endDate: "01/2020",
     company: "Private Contract",
-    description: "Contributed to full stack applications, focusing on multiple aspects such as UI/UX, Microservices, and REST APIs, utilizing ReactJS, Redux, AWS, NodeJS and Express.",
-    achievements: []
+    description: "",
+    achievements: [
+        "Contributed to full stack e-commerce applications",
+        "Developed UI/UX, microservices, REST APIs",
+        "Utilized React, Redux, AWS, Node, and Express"
+    ]
 }];
 
 export default workExperience;
