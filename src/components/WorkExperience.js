@@ -4,7 +4,7 @@ import workExperience from '../data/workExperience';
 import Modal from 'react-modal';
 // import ModalWrapper from "./Modal.styled";
 
-const Job = ({title, startDate, endDate, company, description}) => {
+const Job = ({title, startDate, endDate, company, description, achievements}) => {
     const [open, setOpen] = useState(false);
 
     const toggleOpen = () => {
@@ -13,7 +13,7 @@ const Job = ({title, startDate, endDate, company, description}) => {
 
     return (
         <>
-            <tr>
+            <tr onClick={toggleOpen}>
                 <th scope={"row"}>{title}</th>
                 <td>{startDate}</td>
                 <td>{endDate}</td>
@@ -22,13 +22,22 @@ const Job = ({title, startDate, endDate, company, description}) => {
 
 
             <Modal
-                className={"modal"}
+                className={"mymodal"}
                 overlayClassName={"overlay"} closeTimeoutMD={250}
                 onRequestClose={toggleOpen}
                 isOpen={open}>
-                    <div
-                        style={{color: "white"}}>{description !== "" || "asdf asd fasd fasd fasdf asd fsadf kjadsf jahsdf kjahsdf kajhsdf kjhasd fkjskaj fkasjdhf aksjdhf aksjhd fkjasd fkjasd fkjhasd kfjhas dkfjhasdkfjhasdkfjhasdkfjhaksj dfk asdfk jhasd kfjhas dkfjh asdkjfh asd kfjhas dkjfh askdjh askdj skj"}</div>
-                    <button onClick={toggleOpen}>Close Modal</button>
+                <div
+                    // style={{color: "white"}}
+                >
+                    <h1>{title}</h1>
+                    <p>{company}</p>
+                    <p>{description}</p>
+                    {achievements && <ul>
+                        {achievements.map((achievement, index) => <li key={{index}}>
+                            {achievement}
+                        </li>)}
+                    </ul>}
+                </div>
             </Modal>
         </>
     )
