@@ -6,7 +6,7 @@ export const GlobalStyles = createGlobalStyle`
   *::before {
     box-sizing: border-box;
   }
- body, section, table, .list-group-item, thead, th, tr, td {
+ body, section, table, .list-group-item, thead, tbody {
     //align-items: center;
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
