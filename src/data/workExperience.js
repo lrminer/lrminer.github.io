@@ -1,17 +1,23 @@
-const workExperience =  [{
+const workExperience = [{
     title: "Teaching Assistant",
     startDate: "10/2019",
     endDate: "Current",
     company: "2U/Trilogy",
     description: "Providing effective guidance, training, lesson plans, and tools to support student learning. Tracking student progress throughout the course length. Helping students learn to answer their own questions as developers.",
-    achievements: []
+    achievements: [
+        "Continuous mentoring for all students throughout their careers"
+    ]
 }, {
     title: "Digital Development Engineer",
     startDate: "02/2020",
     endDate: "09/2020",
     company: "Gray Television",
     description: "Created features for a content management system used by dozens of news websites, utilizing React functional components and hooks. Designed features for three target audiences:  curators, editors, and readers.",
-    achievements: []
+    achievements: [
+        "Developed content management system",
+        "Deployed over 60 websites",
+        "Wrote tests for React components using Jest/Enzyme"
+    ]
 }, {
     title: "Full Stack Engineer",
     startDate: "11/2019",

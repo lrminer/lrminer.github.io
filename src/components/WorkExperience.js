@@ -32,10 +32,12 @@ const Job = ({title, startDate, endDate, company, description, achievements}) =>
                     <h1>{title}</h1>
                     <p>{company}</p>
                     <p>{description}</p>
-                    {achievements && <ul>
-                        {achievements.map((achievement, index) => <li key={{index}}>
-                            {achievement}
-                        </li>)}
+                    {achievements.length > 0 && <ul>
+                        {achievements.map((achievement, index) => (
+                            <li key={{index}}>
+                                {achievement}
+                            </li>
+                        ))}
                     </ul>}
                 </div>
             </Modal>
