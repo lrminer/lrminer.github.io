@@ -28,7 +28,6 @@ const Job = ({title, startDate, endDate, company, description}) => {
                 isOpen={open}>
                     <div
                         style={{color: "white"}}>{description !== "" || "asdf asd fasd fasd fasdf asd fsadf kjadsf jahsdf kjahsdf kajhsdf kjhasd fkjskaj fkasjdhf aksjdhf aksjhd fkjasd fkjasd fkjhasd kfjhas dkfjhasdkfjhasdkfjhasdkfjhaksj dfk asdfk jhasd kfjhas dkfjh asdkjfh asd kfjhas dkjfh askdjh askdj skj"}</div>
-                    *!/!*!/}
                     <button onClick={toggleOpen}>Close Modal</button>
             </Modal>
         </>

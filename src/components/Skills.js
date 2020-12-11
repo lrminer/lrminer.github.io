@@ -1,3 +1,5 @@
+import {Fragment} from "react";
+
 import skills from '../data/skills'
 
 const Skills = () => {
@@ -37,15 +39,15 @@ const Skills = () => {
                         <div className={"list-group list-group-flush"}>
                             {skills.sort(sortByName).map((skill, i) => {
                                 if (i % 2 === 0) {
-                                    return <>
+                                    return <Fragment key={i}>
                                         <a className={"list-group-item list-group-item-action text-center"} style={{}}
                                            href={skill.docs}>{skill.name}</a>
                                         <div className="progress">
                                             <div className={`progress-bar bg-info`} role="progressbar"
                                                  style={{width: detProgWidth(skill.experience)}}
-                                                 ariaValuenow="25" ariaValuemin="0" ariaValuemax="100"></div>
+                                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
-                                    </>
+                                    </Fragment>
                                 } else {
                                     return;
                                 }
@@ -58,7 +60,7 @@ const Skills = () => {
                                 if (i % 2 === 0) {
                                     return
                                 } else {
-                                    return <>
+                                    return <Fragment key={i}>
                                         <a className={"list-group-item list-group-item-action text-center"} style={{}}
                                            href={skill.docs}>
                                             {skill.name}
@@ -66,9 +68,9 @@ const Skills = () => {
                                         <div className="progress">
                                             <div className={`progress-bar bg-info`} role="progressbar"
                                                  style={{width: detProgWidth(skill.experience)}}
-                                                 ariaValuenow="25" ariaValuemin="0" ariaValuemax="100"></div>
+                                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
-                                    </>;
+                                    </Fragment>;
                                 }
                             })}
                         </div>
