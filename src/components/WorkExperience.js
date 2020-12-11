@@ -62,6 +62,7 @@ const WorkExperience = () => {
                 {workExperience.map((job, index) => <Job key={index} {...job} />)}
                 </tbody>
             </table>
+            <p>* click on a row to see more details.</p>
         </section>
 
     );
