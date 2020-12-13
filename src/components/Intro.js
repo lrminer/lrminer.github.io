@@ -7,7 +7,7 @@ const Intro = () => {
                  style={{border: 'black 1px solid', borderRadius: "10px"}}>
 
             <div className="row">
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-lg-6">
                     <h1 style={{color: "#007ba7"}}>Logan Miner</h1>
                     <p>Attained Full Stack Development Certificate from Georgia Institute of Technology.</p>
                     {/*<p>Proficient with Node, Express, React, MongoDB, MySQL, Postgres, and GraphQL, among various other*/}
@@ -20,7 +20,7 @@ const Intro = () => {
                     <p>Looking to implement agile methodologies with a development team to create necessary tools
                         catering to a variety of audiences.</p>
                 </div>
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-lg-6">
                     <img style={{maxHeight: 400, maxWidth: 400, height: "100%", width: "100%", border: "#007ba7 solid 10px", borderRadius: "50%"}}
                          src="./professional-image.jpg" alt="Professional image of Logan Miner"/>
                 </div>
