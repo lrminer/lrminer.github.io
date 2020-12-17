@@ -27,7 +27,7 @@ const Navbar = ({theme, toggleTheme}) => {
                     <div className={'d-flex flex-row align-items-center justify-content-center'} id="social-links">
                         <div className="d-flex flex-row pr-2 pr-sm-0">
                             <div className={'pl-3'}>
-                                <a style={{color: "white"}} href="LOGAN_MINER_RESUME.pdf" download={true}>Resume</a>
+                                <a style={{color: "white"}} href="Logan_Miner_Resume.pdf" download={true}>Resume</a>
                             </div>
                             <div className={'pl-3'}>
                                 <a style={{color: "white"}} href="https://github.com/lrminer">GitHub</a>
