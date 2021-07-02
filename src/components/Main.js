@@ -10,7 +10,7 @@ const Main = () => {
       <div className="container p-0">
         <Intro />
         <WorkExperience />
-        <Skills />
+        {/* <Skills /> */}
         <Education />
         <Projects />
         <AdditionalInformation />
